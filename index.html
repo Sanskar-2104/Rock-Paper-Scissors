@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors game</title>
+    <!-- favicon --->
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
+    <!-- links --->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Preloader Start Here -->
+    <div class="preloader">loading...</div>
+    <!-- Preloader End Here -->
+    <header>
+      <img src="images/logo.svg" alt="logo" />
+      <div class="scores">
+        <p>score</p>
+        <span class="user-score"> 0 </span>
+      </div>
+    </header>
+    <main>
+      <div class="level-one">
+        <p class="guide">Choose one of the following items to start...</p>
+        <div class="background-triangle non-select">
+          <img src="images/bg-triangle.svg" alt="triangle" />
+        </div>
+        <div class="objects">
+          <div class="circle paper">
+            <div class="white-bg" alt="holder">
+              <img src="images/icon-paper.svg" alt="paper" />
+            </div>
+          </div>
+          <div class="circle rock">
+            <div class="white-bg" alt="holder">
+              <img src="images/icon-rock.svg" alt="rock" />
+            </div>
+          </div>
+          <div class="circle scissors">
+            <div class="white-bg" alt="holder">
+              <img src="images/icon-scissors.svg" alt="scissors" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="level-two">
+        <div class="userPicked">
+          <p class="guide">YOU PICKED</p>
+          <!-- where the objects selected by the user will come -->
+        </div>
+        <div class="result">
+          <p class="resultText"></p>
+          <button class="resultButton" type="button">PLAY AGAIN</button>
+          <button class="resetScoreBtn" type="button">RESET SCORE</button>
+        </div>
+        <div class="botPicked">
+          <p class="guide">THE HOUSE PICKED</p>
+          <div class="notSelected"></div>
+          <div class="Selected">
+            <!-- where the objects selected by the bot will come -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <button class="rules">RULES</button>
+      <div class="modal">
+        <div class="modal-content">
+          <div class="modal-content__details">
+            <span>RULES</span>
+            <img
+              src="images/icon-close.svg"
+              class="close-button"
+              alt="close-button"
+            />
+          </div>
+          <div class="modal-content__image">
+            <img src="images/image-rules.svg" alt="rules-image" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
